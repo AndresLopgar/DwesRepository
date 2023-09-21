@@ -33,5 +33,4 @@ public class DatosNoCorrectosException extends Exception {
 		// TODO Auto-generated constructor stub
 	}
 
-	
 }
