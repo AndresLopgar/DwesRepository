@@ -1,11 +1,12 @@
 package Laboral;
 
+/**
+ * Es la clase nominas
+ */
 public class CalculaNominas {
 
 	/**
-	 * @param args
-	 * @param empleado1 es un objeto de la clase empleado
-	 * @param empleado2 es un objeto de la clase empleado
+	 * @param args son args
 	 */
 	public static void main(String[] args) {
 		try {

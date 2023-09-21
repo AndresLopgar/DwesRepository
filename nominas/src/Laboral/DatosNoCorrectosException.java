@@ -1,36 +1,58 @@
 package Laboral;
-
+/**
+ * Es la clase de datos no correctos
+ */
 public class DatosNoCorrectosException extends Exception {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
-	public DatosNoCorrectosException() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+	/**
+     * Constructor por defecto de la excepción.
+     */
+    public DatosNoCorrectosException() {
+        super();
+    }
 
-	public DatosNoCorrectosException(String message, Throwable cause, boolean enableSuppression,
-			boolean writableStackTrace) {
-		super(message, cause, enableSuppression, writableStackTrace);
-		// TODO Auto-generated constructor stub
-	}
+    /**
+     * Constructor que permite especificar un mensaje, una causa, la capacidad de suprimir la excepción y
+     * la capacidad de hacer que la pila de llamadas sea escribible o no.
+     *
+     * @param message           Mensaje descriptivo de la excepción.
+     * @param cause             Causa de la excepción.
+     * @param enableSuppression Indica si la supresión de excepciones está habilitada o deshabilitada.
+     * @param writableStackTrace Indica si la pila de llamadas es escribible o no.
+     */
+    public DatosNoCorrectosException(String message, Throwable cause, boolean enableSuppression,
+            boolean writableStackTrace) {
+        super(message, cause, enableSuppression, writableStackTrace);
+    }
 
-	public DatosNoCorrectosException(String message, Throwable cause) {
-		super(message, cause);
-		// TODO Auto-generated constructor stub
-	}
+    /**
+     * Constructor que permite especificar un mensaje y una causa.
+     *
+     * @param message Mensaje descriptivo de la excepción.
+     * @param cause   Causa de la excepción.
+     */
+    public DatosNoCorrectosException(String message, Throwable cause) {
+        super(message, cause);
+    }
 
-	public DatosNoCorrectosException(String message) {
-		super(message);
-		// TODO Auto-generated constructor stub
-	}
+    /**
+     * Constructor que permite especificar un mensaje descriptivo.
+     *
+     * @param message Mensaje descriptivo de la excepción.
+     */
+    public DatosNoCorrectosException(String message) {
+        super(message);
+    }
 
-	public DatosNoCorrectosException(Throwable cause) {
-		super(cause);
-		// TODO Auto-generated constructor stub
-	}
+    /**
+     * Constructor que permite especificar una causa.
+     *
+     * @param cause Causa de la excepción.
+     */
+    public DatosNoCorrectosException(Throwable cause) {
+        super(cause);
+    }
 
 }

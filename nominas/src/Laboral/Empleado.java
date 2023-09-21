@@ -2,9 +2,6 @@ package Laboral;
 
 /**
  * Esta clase extiende de persona
- * 
- * @param categoria       es la categoria del empleado
- * @param anyosTrabajados son los anyos trabajados del empleado
  */
 public class Empleado extends Persona {
 
@@ -14,11 +11,12 @@ public class Empleado extends Persona {
 	/**
 	 * Este constructor está sobrecargado por la clase padre
 	 * 
-	 * @param nombre
-	 * @param dni
-	 * @param sexo
-	 * @throws DatosNoCorrectosException lanza una excepcion cuando la categoria o
-	 *                                   los anyosTrabajados sean incorrectos.
+	 * @param nombre es el nombre 
+	 * @param dni es el dni
+	 * @param sexo es el sexo
+	 * @param categoria es la categoria del empleado
+	 * @param anyosTrabajados son los anyos trabajados del empleado
+	 * @throws DatosNoCorrectosException cuando la categoria o los anyosTrabajados sean incorrectos.
 	 */
 	public Empleado(String nombre, String dni, char sexo, int categoria, double anyosTrabajados)
 			throws DatosNoCorrectosException {
@@ -40,9 +38,9 @@ public class Empleado extends Persona {
 	/**
 	 * Este es el constructor sobrecargado con los atributos del empleado
 	 * 
-	 * @param nombre
-	 * @param dni
-	 * @param sexo
+	 * @param nombre es el nombre
+	 * @param dni es el dni
+	 * @param sexo es el sexo
 	 * @throws DatosNoCorrectosException cuando la categoria o los anyosTrabajados sean incorrectos.
 	 */
 	public Empleado(String nombre, String dni, char sexo) throws DatosNoCorrectosException {
@@ -64,7 +62,7 @@ public class Empleado extends Persona {
 	/**
 	 * Establece el valor del atributo categoria
 	 * 
-	 * @param categoria
+	 * @param categoria es la categoria
 	 * @throws DatosNoCorrectosException cuando la categoria sea incorrecta.
 	 */
 	public void setCategoria(int categoria) throws DatosNoCorrectosException {

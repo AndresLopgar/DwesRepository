@@ -1,9 +1,7 @@
 package Laboral;
 
 /**
- * @Param nombre
- * @param dni
- * @param sexo
+ * Es la clase padre
  */
 public class Persona {
 	String nombre, dni;
@@ -12,9 +10,9 @@ public class Persona {
 	/**
 	 * Constructor sobrecargado con todos los atributos
 	 * 
-	 * @param nombre
-	 * @param dni
-	 * @param sexo
+	 * @param nombre es el nombre
+	 * @param dni  es el dni
+	 * @param sexo es el sexo
 	 */
 	public Persona(String nombre, String dni, char sexo) {
 		super();
@@ -26,8 +24,8 @@ public class Persona {
 	/**
 	 * constructor sobrecargado con nombre y sexo
 	 * 
-	 * @param nombre
-	 * @param sexo
+	 * @param nombre es el nombre
+	 * @param sexo es el sexo
 	 */
 	public Persona(String nombre, char sexo) {
 		super();
@@ -38,7 +36,7 @@ public class Persona {
 	/**
 	 * Establece el valor del atributo dni
 	 * 
-	 * @param dni
+	 * @param dni  es el dni
 	 */
 	public void setDni(String dni) {
 		this.dni = dni;
