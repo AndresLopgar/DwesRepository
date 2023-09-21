@@ -6,7 +6,9 @@ public class Nomina {
 			230000 };
 
 	/**
-	 * Este es un método que nos devuelde el sueldo del empleado pasado por parámetro.
+	 * Este es un método que nos devuelde el sueldo del empleado pasado por
+	 * parámetro.
+	 * 
 	 * @param empleado objeto de la clase Empleado.
 	 * @return un double que se obtiene a partir de unos calculos del empleado.
 	 */

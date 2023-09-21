@@ -11,6 +11,7 @@ public class Persona {
 
 	/**
 	 * Constructor sobrecargado con todos los atributos
+	 * 
 	 * @param nombre
 	 * @param dni
 	 * @param sexo
@@ -24,6 +25,7 @@ public class Persona {
 
 	/**
 	 * constructor sobrecargado con nombre y sexo
+	 * 
 	 * @param nombre
 	 * @param sexo
 	 */
@@ -35,6 +37,7 @@ public class Persona {
 
 	/**
 	 * Establece el valor del atributo dni
+	 * 
 	 * @param dni
 	 */
 	public void setDni(String dni) {

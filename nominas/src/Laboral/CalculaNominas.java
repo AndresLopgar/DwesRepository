@@ -8,13 +8,9 @@ public class CalculaNominas {
 	 * @param empleado2 es un objeto de la clase empleado
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Empleado empleado1;
-		Empleado empleado2;
-
 		try {
-			empleado1 = new Empleado("James Cosling", "32000032G", 'M', 4, 7);
-			empleado2 = new Empleado("Ada Lovalace", "32000031R", 'F');
+			Empleado empleado1 = new Empleado("James Cosling", "32000032G", 'M', 4, 7);
+			Empleado empleado2 = new Empleado("Ada Lovalace", "32000031R", 'F');
 
 			escribe(empleado1);
 			escribe(empleado2);
@@ -34,9 +30,12 @@ public class CalculaNominas {
 	}// fin de la clase main
 
 	/**
-	 * Este es un método que nos imprime por pantalla los datos del empleado que le pasamos por parámetro.
-	@param empleado    objeto de la clase Empleado, del cual conseguimos su sueldo através de el método "nomina".
-	*/
+	 * Este es un método que nos imprime por pantalla los datos del empleado que le
+	 * pasamos por parámetro.
+	 * 
+	 * @param empleado objeto de la clase Empleado, del cual conseguimos su sueldo
+	 *                 através de el método "nomina".
+	 */
 	private static void escribe(Empleado empleado) {
 		Nomina n1 = new Nomina();
 

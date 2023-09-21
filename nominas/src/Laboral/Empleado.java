@@ -2,7 +2,8 @@ package Laboral;
 
 /**
  * Esta clase extiende de persona
- * @param categoria  es la categoria del empleado
+ * 
+ * @param categoria       es la categoria del empleado
  * @param anyosTrabajados son los anyos trabajados del empleado
  */
 public class Empleado extends Persona {
@@ -12,10 +13,12 @@ public class Empleado extends Persona {
 
 	/**
 	 * Este constructor está sobrecargado por la clase padre
+	 * 
 	 * @param nombre
-	 * @param dni  
-	 * @param sexo  
-	 * @throws DatosNoCorrectosException  lanza una excepcion cuando la categoria o los anyosTrabajados sean incorrectos.
+	 * @param dni
+	 * @param sexo
+	 * @throws DatosNoCorrectosException lanza una excepcion cuando la categoria o
+	 *                                   los anyosTrabajados sean incorrectos.
 	 */
 	public Empleado(String nombre, String dni, char sexo, int categoria, double anyosTrabajados)
 			throws DatosNoCorrectosException {
@@ -36,10 +39,11 @@ public class Empleado extends Persona {
 
 	/**
 	 * Este es el constructor sobrecargado con los atributos del empleado
+	 * 
 	 * @param nombre
 	 * @param dni
 	 * @param sexo
-	 * @throws DatosNoCorrectosException  lanza una excepcion cuando la categoria o los anyosTrabajados sean incorrectos.
+	 * @throws DatosNoCorrectosException cuando la categoria o los anyosTrabajados sean incorrectos.
 	 */
 	public Empleado(String nombre, String dni, char sexo) throws DatosNoCorrectosException {
 		super(nombre, dni, sexo);
@@ -50,6 +54,7 @@ public class Empleado extends Persona {
 
 	/**
 	 * Obtiene el valor de la categoria
+	 * 
 	 * @return El valor del atributo categoria
 	 */
 	public int getCategoria() {
@@ -58,13 +63,18 @@ public class Empleado extends Persona {
 
 	/**
 	 * Establece el valor del atributo categoria
+	 * 
 	 * @param categoria
+	 * @throws DatosNoCorrectosException cuando la categoria sea incorrecta.
 	 */
-	public void setCategoria(int categoria) {
-		this.categoria = categoria;
+	public void setCategoria(int categoria) throws DatosNoCorrectosException {
+		if (categoria < 1 || categoria > 10) {
+			throw new DatosNoCorrectosException("La categoria debe ser un numero entre 1 y 10");
+		} else {
+			this.categoria = categoria;
+		}
 	}
 
-	
 	/**
 	 * Este metodo incrementa un anyoTrabajado al empleado
 	 */
