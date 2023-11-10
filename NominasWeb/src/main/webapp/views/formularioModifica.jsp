@@ -31,7 +31,6 @@
 			</tr>
 		</table>
 		<input type="submit" name="opcion" value="mostrar">
-		<input type="submit" name="opcion" value="modificar">
 	</form>
 	<a href="NominasController?opcion=menu">Volver al men&uacute;</a>
 </body>

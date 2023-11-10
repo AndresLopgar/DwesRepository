@@ -15,19 +15,25 @@
 	<p><%=request.getAttribute("mensaje")%></p>
 	<table border="1">
 		<tr>
-			<td>Nombre</td>
 			<td>DNI</td>
+			<td>Nombre</td>
 			<td>Sexo</td>
 			<td>Categoría</td>
 			<td>Años trabajados</td>
 		</tr>
 		<c:forEach var="empleado" items="${empleados}">
 			<tr>
+				<td><a
+					href="NominasController?opcion=meditar&dni=<c:out value="${ empleado.dni}"></c:out>">
+						<c:out value="${ empleado.dni}"></c:out>
+				</a></td>
 				<td>${empleado.nombre}</td>
-				<td>${empleado.dni}</td>
 				<td>${empleado.sexo}</td>
 				<td>${empleado.categoria}</td>
 				<td>${empleado.anyosTrabajados}</td>
+				<td><a
+					href="NominasController?opcion=eliminar&dni=<c:out value="${ empleado.dni}"></c:out>">
+						Eliminar </a></td>
 			</tr>
 		</c:forEach>
 	</table>
